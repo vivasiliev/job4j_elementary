@@ -16,12 +16,14 @@ public class X2Test {
         int rsl = X2.calc(1, 1, 1, 1);
         Assert.assertEquals(expected, rsl);
     }
+
     @Test
     public void whenA0B1C1X1Then2() {
         int expected = 2;
         int rsl = X2.calc(0, 1, 1, 1);
         Assert.assertEquals(expected, rsl);
     }
+
     @Test
     public void whenA1B1C0X1Then2() {
         int expected = 2;
