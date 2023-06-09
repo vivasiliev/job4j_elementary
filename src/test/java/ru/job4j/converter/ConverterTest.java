@@ -3,6 +3,7 @@ package ru.job4j.converter;
 import org.junit.Assert;
 import org.junit.Test;
 public class ConverterTest {
+
     @Test
     public void whenConvert140RblThen2Euro() {
         float in = 140;
@@ -11,6 +12,7 @@ public class ConverterTest {
         float eps = 0.0001f;
         Assert.assertEquals(expected, out, eps);
     }
+
     @Test
     public void whenConvert180RblThen3Dollars() {
         float in = 180;
@@ -19,6 +21,7 @@ public class ConverterTest {
         float eps = 0.0001f;
         Assert.assertEquals(expected, out, eps);
     }
+
     @Test
     public void whenConvert10DlrThen9dot3Euro() {
         float in = 10;
@@ -27,6 +30,7 @@ public class ConverterTest {
         float eps = 0.0001f;
         Assert.assertEquals(expected, out, eps);
     }
+
     @Test
     public void whenConvert14EurThen14dot9800Dollars() {
         float in = 14;
