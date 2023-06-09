@@ -26,10 +26,17 @@ public class Converter {
         float dollar = Converter.rubleToDollar(180);
         float dollarToEuro = Converter.dollarToEuro(10);
         float euroToDollar = Converter.euroToDollar(14);
-        System.out.println("140 rubles are " + euro + " euro.");
-        System.out.println("180 rubles are " + dollar + " dollars.");
-        System.out.println("180 rubles are " + dollar + " dollars.");
-        System.out.println("10 dollars are " + dollarToEuro + " euro.");
-        System.out.println("14 euro are " + euroToDollar + " dollars.");
+        float expEuro = 2.0f;
+        float expDollar = 3.0f;
+        float expDollarToEuro = 9.3f;
+        float expEuroToDollar = 14.9800005f;
+        boolean passedEuro = euro == expEuro;
+        boolean passedDollar = dollar == expDollar;
+        boolean passedDollarToEuro = dollarToEuro == expDollarToEuro;
+        boolean passedEuroToDollar = euroToDollar == expEuroToDollar;
+        System.out.println("140 rubles are " + euro + " euro. Результат теста: " + passedEuro);
+        System.out.println("180 rubles are " + dollar + " dollars.Результат теста: " + passedDollar);
+        System.out.println("10 dollars are " + dollarToEuro + " euro.Результат теста: " + passedDollarToEuro);
+        System.out.println("14 euro are " + euroToDollar + " dollars.Результат теста: " + passedEuroToDollar);
     }
 }
