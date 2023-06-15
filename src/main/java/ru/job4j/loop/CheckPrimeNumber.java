@@ -16,3 +16,5 @@ public class CheckPrimeNumber {
         System.out.println(check(4));
     }
 }
+
+
