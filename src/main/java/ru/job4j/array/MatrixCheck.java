@@ -23,12 +23,20 @@ public class MatrixCheck {
         return result;
     }
 
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int index = 0; index < board.length; index++) {
+            rsl[index] = board[index][index];
+        }
+        return rsl;
+    }
+
     public static void main(String[] args) {
         char[][] input = {
-                {' ', ' ', 'X'},
-                {' ', ' ', 'X'},
+                {'X', ' ', ' '},
+                {' ', 'X', ' '},
                 {' ', ' ', 'X'},
         };
-        System.out.println(monoVertical(input, 2));
+        System.out.println(extractDiagonal(input));
     }
 }
